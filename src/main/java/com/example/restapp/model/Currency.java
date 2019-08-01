@@ -7,6 +7,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
 import java.util.Date;
 
 @Entity
@@ -21,7 +24,7 @@ public class Currency {
     private double eur = Parsing.EUR;
     private double gbp = Parsing.GBP;
     private Date date = Parsing.date;
-
+    private LocalTime localTime = LocalTime.now();
 
     public Currency(){}
 

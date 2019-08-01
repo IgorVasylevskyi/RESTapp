@@ -16,7 +16,7 @@ public class CurrencyController {
     @Autowired
     public CurrencyService currencyService;
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public Currency addCurrency(@RequestBody Currency currency){
         return currencyService.addCurrency(currency);
     }
